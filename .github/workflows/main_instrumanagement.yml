@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Instrumanagement'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FFDD74BBDCA4425680979C93754DF7A4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D369DB5F0A7B402CA61FC0EDCF0F3319 }}
           package: .
