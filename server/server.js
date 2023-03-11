@@ -16,7 +16,7 @@ const api = process.env.API_URL;
 app.use(express.json());
 app.use(morgan("tiny"));
 
-app.use(express.static(path.join(__dirname + "../dist")));
+app.use(express.static(path.join(__dirname + "/dist")));
 
 //route for instruments
 const instrumentsRoute = require("./routes/instrument");
@@ -37,7 +37,7 @@ mongoose
   });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "../dist/index.html"));
+  res.sendFile(path.join(__dirname + "/dist/index.html"));
 });
 
 //running on localhost port 3000
