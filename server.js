@@ -7,7 +7,8 @@ const cors = require("cors");
 app.use(cors());
 const mongoose = require("mongoose");
 const morgan = require("morgan");
-const port = (process.env.PORT || 3000);
+const port = (process.env.PORT || 3080);
+console.log(port);
 
 //for .env file
 require("dotenv/config");
