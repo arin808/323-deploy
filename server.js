@@ -7,6 +7,9 @@ const cors = require("cors");
 app.use(cors());
 const mongoose = require("mongoose");
 const morgan = require("morgan");
+var log4js = require("log4js");
+var logger = log4js.getLogger();
+logger.level = "info";
 const port = (process.env.PORT || 3000);
 
 //for .env file
@@ -32,6 +35,7 @@ mongoose
   })
   .then(() => {
     console.log("Database connection is ready");
+    logger.info("Database connection established");
   })
   .catch((err) => {
     console.log(err);
